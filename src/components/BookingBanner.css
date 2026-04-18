@@ -1,0 +1,83 @@
+/* ===== BOOKING BANNER ===== */
+.booking-banner {
+  background: linear-gradient(135deg, #1a1200 0%, #0a0f1e 40%, #0d1a0a 100%);
+  border-top: 1px solid rgba(245,166,35,0.15);
+  border-bottom: 1px solid rgba(245,166,35,0.15);
+  padding: 40px 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.booking-banner__glow {
+  position: absolute;
+  top: 50%;
+  left: 30%;
+  transform: translate(-50%, -50%);
+  width: 600px;
+  height: 300px;
+  background: radial-gradient(ellipse, rgba(245,166,35,0.08) 0%, transparent 70%);
+  pointer-events: none;
+}
+
+.booking-banner__inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 32px;
+  flex-wrap: wrap;
+  position: relative;
+}
+
+.booking-banner__left {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.booking-banner__pulse {
+  width: 14px;
+  height: 14px;
+  background: #f5a623;
+  border-radius: 50%;
+  flex-shrink: 0;
+  animation: pulse-gold 2s ease-in-out infinite;
+}
+
+.booking-banner__title {
+  font-family: 'Outfit', sans-serif;
+  font-size: clamp(1.3rem, 2.5vw, 1.7rem);
+  font-weight: 800;
+  color: #ffffff;
+  line-height: 1.2;
+}
+
+.booking-banner__sub {
+  font-size: 0.9rem;
+  color: rgba(255,255,255,0.6);
+  margin-top: 4px;
+}
+
+.booking-banner__actions {
+  display: flex;
+  gap: 14px;
+  flex-wrap: wrap;
+}
+
+.booking-banner__btn {
+  font-size: 1rem;
+  padding: 15px 30px;
+}
+
+@media (max-width: 640px) {
+  .booking-banner__inner {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .booking-banner__actions {
+    width: 100%;
+  }
+  .booking-banner__actions a {
+    flex: 1;
+    justify-content: center;
+  }
+}

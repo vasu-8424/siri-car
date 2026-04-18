@@ -1,0 +1,116 @@
+/* ========================================
+   BRANDS SECTION — Matches Ref Image
+   ======================================== */
+
+.brands {
+  position: relative;
+  background: white;
+  padding: 100px 0 80px;
+  /* Start immediately after Hero, no overlap */
+  z-index: 10;
+  color: #0a0f1e;
+}
+
+.brands__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.brands__title-group {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.brands__title {
+  font-family: 'Outfit', sans-serif;
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #0a0f1e;
+}
+
+.brands__subtitle {
+  font-size: 0.95rem;
+  color: #718096;
+  font-weight: 500;
+}
+
+.brands__link {
+  font-family: 'Outfit', sans-serif;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #0a0f1e;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.brands__link:hover {
+  color: #f5a623;
+  transform: translateX(5px);
+}
+
+.brands__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+.brand-card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 24px;
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 16px;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  cursor: pointer;
+}
+
+.brand-card:hover {
+  transform: translateY(-8px);
+  background: white;
+  border-color: #f5a623;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.06);
+}
+
+.brand-card__logo-wrap {
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.brand-card__logo {
+  max-height: 100%;
+  max-width: 160px;
+  object-fit: contain;
+  transition: all 0.3s ease;
+}
+
+.brand-card:hover .brand-card__logo {
+  transform: scale(1.1);
+}
+
+.brand-card__fallback {
+  font-family: 'Outfit', sans-serif;
+  font-size: 1.2rem;
+  font-weight: 800;
+  color: #1a202c;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+@media (max-width: 1024px) {
+  .brands__grid { grid-template-columns: repeat(3, 1fr); }
+}
+
+@media (max-width: 640px) {
+  .brands {
+    padding: 60px 0 40px;
+  }
+  .brands__grid { grid-template-columns: repeat(2, 1fr); }
+  .brands__header { flex-direction: column; align-items: flex-start; gap: 10px; }
+}

@@ -1,0 +1,277 @@
+/* ===================================================
+   SIRI CAR RENTALS — Global Design System
+   =================================================== */
+
+:root {
+  /* Brand Colors */
+  --navy: #0a0f1e;
+  --navy-light: #161d31;
+  --gold: #f5a623;
+  --gold-light: #fbbf24;
+  --gold-dark: #d97706;
+  --white: #ffffff;
+  --off-white: #f8fafc;
+  --border: rgba(255, 255, 255, 0.1);
+  --border-light: rgba(0, 0, 0, 0.1);
+  --text-main: #ffffff;
+  --text-dim: rgba(255, 255, 255, 0.7);
+  --text-dark: #0a0f1e;
+  --text-dark-dim: #4a5568;
+
+  /* Theme Colors */
+  --bg-dark: var(--navy);
+  --bg-light: var(--white);
+  --card-dark: rgba(255, 255, 255, 0.05);
+  --card-light: #ffffff;
+  --white-40: rgba(255,255,255,0.4);
+  --white-10: rgba(255,255,255,0.07);
+  --border-gold: rgba(245,166,35,0.3);
+
+  /* Typography */
+  --font-heading: 'Outfit', sans-serif;
+  --font-body: 'Inter', sans-serif;
+
+  /* Spacing */
+  --section-pad: 90px 0;
+
+  /* Shadows */
+  --shadow-gold: 0 0 30px rgba(245,166,35,0.2);
+  --shadow-card: 0 8px 40px rgba(0,0,0,0.4);
+  --shadow-glow: 0 0 60px rgba(245,166,35,0.12);
+
+  /* Transitions */
+  --ease: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 80px;
+}
+
+body {
+  font-family: var(--font-body);
+  background: var(--navy);
+  color: var(--white);
+  overflow-x: hidden;
+  line-height: 1.6;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: var(--navy); }
+::-webkit-scrollbar-thumb { background: var(--gold); border-radius: 3px; }
+
+/* ===== UTILITY CLASSES ===== */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+.section-pad {
+  padding: 100px 0;
+  background: var(--bg-light);
+  color: var(--text-dark);
+}
+
+.section-tag {
+  display: inline-block;
+  font-family: var(--font-heading);
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  color: var(--gold);
+  margin-bottom: 12px;
+}
+
+.section-title {
+  font-family: var(--font-heading);
+  font-size: clamp(2rem, 4vw, 2.75rem);
+  font-weight: 900;
+  line-height: 1.2;
+  margin-bottom: 24px;
+  color: var(--text-dark);
+}
+
+.section-title span {
+  color: var(--gold);
+}
+
+.section-sub {
+  font-size: 1.1rem;
+  color: var(--text-dark-dim);
+  max-width: 600px;
+  margin: 0 auto 50px;
+  line-height: 1.6;
+}
+
+/* Gradient Divider */
+.gradient-div {
+  width: 60px;
+  height: 4px;
+  background: linear-gradient(90deg, var(--gold), var(--accent));
+  border-radius: 2px;
+  margin: 16px 0 24px;
+}
+
+/* CTA Buttons — Glassmorphic Style */
+.btn-primary {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  /* frosted gold glass */
+  background: rgba(245, 166, 35, 0.16);
+  border: 1px solid rgba(245, 166, 35, 0.5);
+  color: #f5a623;
+  font-family: var(--font-heading);
+  font-weight: 700;
+  font-size: 0.95rem;
+  padding: 14px 28px;
+  border-radius: 10px;
+  cursor: pointer;
+  text-decoration: none;
+  transition: all 0.3s var(--ease);
+  backdrop-filter: blur(16px) saturate(160%);
+  -webkit-backdrop-filter: blur(16px) saturate(160%);
+  box-shadow:
+    0 4px 20px rgba(245, 166, 35, 0.15),
+    inset 0 1px 0 rgba(255, 255, 255, 0.12);
+  white-space: nowrap;
+  letter-spacing: 0.01em;
+}
+
+.btn-primary:hover {
+  background: rgba(245, 166, 35, 0.28);
+  border-color: rgba(245, 166, 35, 0.75);
+  color: #fbbf24;
+  transform: translateY(-2px);
+  box-shadow:
+    0 8px 30px rgba(245, 166, 35, 0.3),
+    inset 0 1px 0 rgba(255, 255, 255, 0.18);
+}
+
+.btn-outline {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  /* frosted white glass */
+  background: rgba(255, 255, 255, 0.07);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: rgba(255, 255, 255, 0.88);
+  font-family: var(--font-heading);
+  font-weight: 600;
+  font-size: 0.95rem;
+  padding: 14px 28px;
+  border-radius: 10px;
+  cursor: pointer;
+  text-decoration: none;
+  transition: all 0.3s var(--ease);
+  white-space: nowrap;
+  backdrop-filter: blur(16px) saturate(160%);
+  -webkit-backdrop-filter: blur(16px) saturate(160%);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1);
+  letter-spacing: 0.01em;
+}
+
+.btn-outline:hover {
+  border-color: rgba(245, 166, 35, 0.5);
+  color: #f5a623;
+  background: rgba(245, 166, 35, 0.1);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 20px rgba(245,166,35,0.12), inset 0 1px 0 rgba(255,255,255,0.1);
+}
+
+.btn-whatsapp {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  /* frosted green glass */
+  background: rgba(37, 211, 102, 0.15);
+  border: 1px solid rgba(37, 211, 102, 0.45);
+  color: #25D366;
+  font-family: var(--font-heading);
+  font-weight: 700;
+  font-size: 0.95rem;
+  padding: 14px 28px;
+  border-radius: 10px;
+  cursor: pointer;
+  text-decoration: none;
+  transition: all 0.3s var(--ease);
+  backdrop-filter: blur(16px) saturate(160%);
+  -webkit-backdrop-filter: blur(16px) saturate(160%);
+  box-shadow:
+    0 4px 20px rgba(37, 211, 102, 0.15),
+    inset 0 1px 0 rgba(255, 255, 255, 0.1);
+  white-space: nowrap;
+  letter-spacing: 0.01em;
+}
+
+.btn-whatsapp:hover {
+  background: rgba(37, 211, 102, 0.26);
+  border-color: rgba(37, 211, 102, 0.65);
+  color: #4ade80;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 30px rgba(37, 211, 102, 0.3), inset 0 1px 0 rgba(255,255,255,0.14);
+}
+
+/* Glass Card */
+.glass-card {
+  background: rgba(255,255,255,0.04);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  backdrop-filter: blur(12px);
+  transition: all 0.3s var(--ease);
+}
+
+.glass-card:hover {
+  background: rgba(255,255,255,0.07);
+  border-color: var(--border-gold);
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-card);
+}
+
+/* Fade-in animation */
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes pulse-gold {
+  0%, 100% { box-shadow: 0 0 0 0 rgba(245,166,35,0.4); }
+  50% { box-shadow: 0 0 0 12px rgba(245,166,35,0); }
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+}
+
+@keyframes shimmer {
+  0% { background-position: -200% center; }
+  100% { background-position: 200% center; }
+}
+
+.animate-fade-up {
+  animation: fadeUp 0.7s var(--ease) both;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .section-pad { padding: 60px 0; }
+  .btn-primary, .btn-outline, .btn-whatsapp {
+    padding: 12px 22px;
+    font-size: 0.88rem;
+  }
+}
