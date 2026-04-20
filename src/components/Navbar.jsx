@@ -48,7 +48,7 @@ export default function Navbar() {
         </nav>
 
         {/* Desktop CTA */}
-        <a href="tel:+919876543210" className="btn-primary navbar__cta">
+        <a href="tel:+918977934454" className="btn-primary navbar__cta">
           <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
             <path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1-9.4 0-17-7.6-17-17 0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1L6.6 10.8z"/>
           </svg>
@@ -71,8 +71,8 @@ export default function Navbar() {
           <a key={l.href} href={l.href} className="navbar__mobile-link" onClick={close}>{l.label}</a>
         ))}
         <div className="navbar__mobile-actions">
-          <a href="tel:+919876543210" className="btn-primary" onClick={close}>📞 Call Now</a>
-          <a href="https://wa.me/919876543210" className="btn-whatsapp" onClick={close} target="_blank" rel="noreferrer">💬 WhatsApp</a>
+          <a href="tel:+918977934454" className="btn-primary" onClick={close}>📞 Call Now</a>
+          <a href="https://wa.me/918977934454" className="btn-whatsapp" onClick={close} target="_blank" rel="noreferrer">💬 WhatsApp</a>
         </div>
       </div>
     </header>

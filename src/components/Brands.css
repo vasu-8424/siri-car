@@ -111,6 +111,8 @@
   .brands {
     padding: 60px 0 40px;
   }
-  .brands__grid { grid-template-columns: repeat(2, 1fr); }
+  .brands__grid { grid-template-columns: repeat(2, 1fr); gap: 16px; }
   .brands__header { flex-direction: column; align-items: flex-start; gap: 10px; }
+  .brand-card { padding: 24px 16px; }
+  .brand-card__logo { max-width: 120px; }
 }

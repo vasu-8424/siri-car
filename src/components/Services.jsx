@@ -77,7 +77,7 @@ export default function Services() {
                   </li>
                 ))}
               </ul>
-              <a href={`https://wa.me/919876543210?text=Hi%2C%20I%20want%20to%20book%20${encodeURIComponent(s.title)}`}
+              <a href={`https://wa.me/918977934454?text=Hi%2C%20I%20want%20to%20book%20${encodeURIComponent(s.title)}`}
                 className="service-card__cta"
                 target="_blank"
                 rel="noreferrer"

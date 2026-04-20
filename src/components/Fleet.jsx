@@ -15,6 +15,7 @@ const CATEGORIES = [
         fuel: 'Petrol',
         img: '/images/swift.png',
         tag: 'Popular',
+        imgPosition: 'center 80%',
       },
       {
         name: 'Maruti Dzire',
@@ -33,6 +34,7 @@ const CATEGORIES = [
         fuel: 'Petrol',
         img: '/images/baleno.jpg',
         tag: 'Comfort Pick',
+        imgPosition: 'center 80%',
       },
       {
         name: 'Maruti Fronx',
@@ -94,6 +96,7 @@ const CATEGORIES = [
         fuel: 'Diesel',
         img: '/images/crysta.jpg',
         tag: 'Top Choice',
+        imgPosition: 'center 80%',
       },
     ],
   },
@@ -117,7 +120,7 @@ const CATEGORIES = [
         seats: 4,
         ac: true,
         fuel: 'Petrol/Diesel',
-        img: '/images/thar.jpg',
+        img: '/images/image.png',
         tag: '🔥 Legend',
       },
       {
@@ -201,7 +204,13 @@ export default function Fleet() {
                 </div>
               )}
               <div className="car-card__img-wrap">
-                <img src={car.img} alt={car.name} className="car-card__img" loading="lazy" />
+                <img 
+                  src={car.img} 
+                  alt={car.name} 
+                  className="car-card__img" 
+                  loading="lazy" 
+                  style={{ objectPosition: car.imgPosition || 'center' }}
+                />
                 <div className="car-card__img-overlay" />
               </div>
               <div className="car-card__body">
@@ -215,7 +224,7 @@ export default function Fleet() {
                 </div>
                 <h3 className="car-card__name">{car.name}</h3>
                 <a
-                  href={`https://wa.me/919876543210?text=Hi%20SIRI%20CAR%20RENTALS%2C%20I%20want%20to%20book%20${encodeURIComponent(car.name)}`}
+                  href={`https://wa.me/918977934454?text=Hi%20SIRI%20CAR%20RENTALS%2C%20I%20want%20to%20book%20${encodeURIComponent(car.name)}`}
                   className={`car-card__btn${active === 'premium' ? ' car-card__btn--premium' : ''}`}
                   target="_blank"
                   rel="noreferrer"
@@ -233,7 +242,7 @@ export default function Fleet() {
         {/* Bottom CTA */}
         <div className="fleet__bottom-cta">
           <p>Prefer another manufacturer? <strong>Contact us today!</strong></p>
-          <a href="tel:+919876543210" className="btn-primary">
+          <a href="tel:+918977934454" className="btn-primary">
             📞 Call For Inquiry
           </a>
         </div>

@@ -23,7 +23,7 @@ export default function Contact() {
           {/* Contact Cards */}
           <div className="contact__cards">
             {/* Phone */}
-            <a href="tel:+919876543210" className="contact-card contact-card--phone">
+            <a href="tel:+918977934454" className="contact-card contact-card--phone">
               <div className="contact-card__icon">
                 <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor">
                   <path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1-9.4 0-17-7.6-17-17 0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1L6.6 10.8z"/>
@@ -31,7 +31,7 @@ export default function Contact() {
               </div>
               <div className="contact-card__info">
                 <span className="contact-card__label">Call Us Directly</span>
-                <strong className="contact-card__value">+91 98765 43210</strong>
+                <strong className="contact-card__value">+91 89779 34454</strong>
                 <span className="contact-card__sub">Available 24/7, every day</span>
               </div>
               <div className="contact-card__arrow">→</div>
@@ -39,7 +39,7 @@ export default function Contact() {
 
             {/* WhatsApp */}
             <a
-              href="https://wa.me/919876543210?text=Hi%20SIRI%20CAR%20RENTALS%2C%20I%20want%20to%20book%20a%20car!"
+              href="https://wa.me/918977934454?text=Hi%20SIRI%20CAR%20RENTALS%2C%20I%20want%20to%20book%20a%20car!"
               className="contact-card contact-card--whatsapp"
               target="_blank"
               rel="noreferrer"
@@ -51,14 +51,14 @@ export default function Contact() {
               </div>
               <div className="contact-card__info">
                 <span className="contact-card__label">WhatsApp Us</span>
-                <strong className="contact-card__value">+91 98765 43210</strong>
+                <strong className="contact-card__value">+91 89779 34454</strong>
                 <span className="contact-card__sub">Fastest response guaranteed</span>
               </div>
               <div className="contact-card__arrow contact-card__arrow--wa">→</div>
             </a>
 
             {/* Email */}
-            <a href="mailto:siricarrentals@gmail.com" className="contact-card contact-card--email">
+            <a href="mailto:Sai.vizag007@gmail.com" className="contact-card contact-card--email">
               <div className="contact-card__icon contact-card__icon--email">
                 <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                   <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
@@ -67,7 +67,7 @@ export default function Contact() {
               </div>
               <div className="contact-card__info">
                 <span className="contact-card__label">Email Us</span>
-                <strong className="contact-card__value">siricarrentals@gmail.com</strong>
+                <strong className="contact-card__value">Sai.vizag007@gmail.com</strong>
                 <span className="contact-card__sub">For inquiries & quotes</span>
               </div>
               <div className="contact-card__arrow contact-card__arrow--email">→</div>
@@ -103,7 +103,7 @@ export default function Contact() {
                 <span className="contact__info-icon">📍</span>
                 <div>
                   <strong>Location</strong>
-                  <span>Visakhapatnam, Andhra Pradesh</span>
+                  <span>2-74 v juttada, pendurthi, Visakhapatnam 531173</span>
                 </div>
               </div>
               <div className="contact__info-item">
@@ -130,11 +130,11 @@ export default function Contact() {
             </div>
 
             <div className="contact__panel-ctas">
-              <a href="tel:+919876543210" className="btn-primary" style={{ width: '100%', justifyContent: 'center' }}>
+              <a href="tel:+918977934454" className="btn-primary" style={{ width: '100%', justifyContent: 'center' }}>
                 📞 Call & Book Now
               </a>
               <a
-                href="https://wa.me/919876543210?text=Hi%20SIRI%20CAR%20RENTALS%2C%20I%20want%20to%20book%20a%20car!"
+                href="https://wa.me/918977934454?text=Hi%20SIRI%20CAR%20RENTALS%2C%20I%20want%20to%20book%20a%20car!"
                 className="btn-whatsapp"
                 style={{ width: '100%', justifyContent: 'center' }}
                 target="_blank"

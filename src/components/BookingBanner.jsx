@@ -17,14 +17,14 @@ export default function BookingBanner() {
         </div>
 
         <div className="booking-banner__actions">
-          <a href="tel:+919876543210" className="btn-primary booking-banner__btn">
+          <a href="tel:+918977934454" className="btn-primary booking-banner__btn">
             <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
               <path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1-9.4 0-17-7.6-17-17 0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1L6.6 10.8z"/>
             </svg>
-            +91 98765 43210
+            +91 89779 34454
           </a>
           <a
-            href="https://wa.me/919876543210?text=Hi%20SIRI%20CAR%20RENTALS%2C%20I%20need%20a%20car%20right%20now!"
+            href="https://wa.me/918977934454?text=Hi%20SIRI%20CAR%20RENTALS%2C%20I%20need%20a%20car%20right%20now!"
             className="btn-whatsapp"
             target="_blank"
             rel="noreferrer"
