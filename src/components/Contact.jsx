@@ -75,7 +75,7 @@ export default function Contact() {
 
             {/* Instagram */}
             <a
-              href="https://instagram.com/siricarrentals"
+              href="https://www.instagram.com/siri_car_rentals_5?igsh=dnlseTZnNWI1dzJn&utm_source=qr"
               className="contact-card contact-card--insta"
               target="_blank"
               rel="noreferrer"
